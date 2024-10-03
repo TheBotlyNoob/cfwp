@@ -738,6 +738,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "register"
+version = "0.1.0"
+dependencies = [
+ "tokio",
+ "warp-client",
+ "x25519-dalek",
+]
+
+[[package]]
 name = "reqwest"
 version = "0.12.8"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1300,9 +1309,7 @@ dependencies = [
  "rand",
  "reqwest",
  "time",
- "tokio",
  "warp-raw-api",
- "x25519-dalek",
 ]
 
 [[package]]

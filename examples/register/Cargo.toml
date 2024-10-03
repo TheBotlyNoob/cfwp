@@ -1,0 +1,12 @@
+[package]
+name = "register"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.40.0", features = ["full"] }
+warp-client = { version = "0.1.0", path = "../../warp-client" }
+x25519-dalek = { version = "2.0.1", features = [
+    "getrandom",
+    "reusable_secrets",
+] }
